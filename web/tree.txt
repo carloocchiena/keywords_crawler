@@ -1,0 +1,17 @@
+Elenco del percorso delle cartelle per il volume Personale Carlo D:
+Numero di serie del volume: E81A-5A30
+D:.
+
+
+|       
++---backup # folder di tutti i backup 
+|   |   
+|   +---charchit_rev # il backup che mi ha fatto il tizio su StackOverflow
+|   |               
+|   \---refactoring version hard backup # una copia fatta alla ignorante a maggio dovrebbe avere tutto per risalire alla versione funzionante 
+|               
++---prod_main # la versione nativa funzionante che però è ormai obsoleta, senza multithread 
+|           
++---tool_final_no_web # la versione che voglio rendere perfetta, ma senza la parte web
+|           
++---work_in_progress # la versione ultima lavorata, che fa tutto ma non funziona come web version 

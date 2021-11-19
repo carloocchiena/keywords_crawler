@@ -1,0 +1,22 @@
+<!doctype html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <iframe frameborder="0" noresize="noresize" id="space"
+     style='background: transparent; width: 100%; height:100%;' src="{{ url_for('content')}}"></iframe>
+    </div>
+    
+    <!-- non funziona, ma boh?
+    <script>
+		window.setInterval("reloadIFrame();", 10000);
+
+		function reloadIFrame() {
+		var frameHolder=document.getElementById('space');
+		document.getElementById("myIframe").src="{{ url_for('content')}}";
+		}
+	</script>
+    -->
+    
+</body>

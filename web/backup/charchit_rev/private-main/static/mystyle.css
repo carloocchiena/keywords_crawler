@@ -1,0 +1,21 @@
+body {
+    margin: 20px;
+}
+
+
+
+.box {
+    position:relative;
+}
+
+.col-md-10 {
+    margin: 1px;
+    padding:3px;
+    line-height: .95em;
+}
+
+.text-primary {
+    margin-top: 5px;
+}
+
+

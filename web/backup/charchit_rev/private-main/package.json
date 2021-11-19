@@ -1,0 +1,17 @@
+{
+  "name": "url-crawler",
+  "version": "1.0.0",
+  "description": "this is just to start the JS function (supposedly).",
+  "main": "/static/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }, 
+  
+  "engines": { 
+    "node": "7.10.0",
+    "npm": "4.2.0"
+  },
+  
+  "author": "carlo-occhiena",
+  "license": "MIT"
+}

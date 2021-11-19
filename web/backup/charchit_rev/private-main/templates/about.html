@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <!-- stylesheet -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" href="/static/mystyle.css">
+
+</head>
+
+<body>
+    <div class = "container">
+        <h2 name="top"> What is this?</h2>
+        <h3>This is a keyword finder.</h3>
+        <p>
+            I created this web app myself from scratch, starting from a Python script I made for my own use. <br>
+            <br>
+            <strong>The Problem:</strong> To quickly understand what a site and its articles are about without delving into reading the articles themselves, and having an easily exportable keyword trail, presented me with two problems:<br>
+            - navigating the whole site<br>
+            - understanding the definition of keywords<br>
+            <br>
+            <strong>The Solution:</strong> To solve this, I first created a crawler that iteratively scans the whole site for relevant urls, through a search & purge process.<br>
+            Then through a data cleaning&sorting algorithm it returns the statistically relevant keywords.<br>
+            For each url we then have the keyword and its relevance score.<br>
+            <br>
+            Since I liked the raw script in Python quite well, I exported it to a web version. I wanted a "full stack Python" approach, so I switched to Flask (after several experiments in Django, which were overkill for the simplicity of the app).<br>
+            <br>
+            
+            The goal is to make it a tool that can be used by third parties without the need to master Python.<br>
+            <br>
+            This first release is still quite rough.<br>
+        </p>
+        <h4>Known Issues</h4>
+        <p>
+            <ul>
+                <li> Algo performances (scrapers rely on website speed, and also the functions are not yet tweaked and optimized)</li>
+                <li> Websites with no nidified urls or no urls</li>
+                <li> Websites that doesn't allow crawlers</li>
+                <li> Weird-coded websites (the scraper relies on a canonical DOM structure) </li>
+            </ul>
+        </p>
+        <h4>About me</h4>
+        <p>
+            I am Carlo Occhiena. I am an entrepreneur, the founder of <a href="https://www.azionadigitale.com">Aziona</a>.
+            I am very open to cooperate or to get feedbacks and suggestions about this tool (or also a good pull req!). <br>
+            Get in touch on <br> <a href="https://www.linkedin.com/in/carloocchiena/">Linkedin</a> <br>
+            <a href="https://github.com/carloocchiena">GitHub</a>
+        </p>
+        <div class="box">
+            <button class="btn btn-outline-primary"><a href="/">Back to Home Page</a></button>
+        </div>
+    </div>
+</body>
+                    
+</html>
